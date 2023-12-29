@@ -1,0 +1,23 @@
+@use "./variables" as *;
+.primary-btn {
+  width: 60%;
+  border-radius: 5rem;
+  background-color: inherit;
+  border: 2px $secondary-color-blue solid;
+  text-transform: capitalize;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  &:hover {
+    background-color: $secondary-color-blue;
+  }
+}
+
+.back {
+  width: 4rem;
+  background-color: transparent;
+  border: 0;
+  font-size: x-large;
+  text-align: start;
+  padding: 0;
+}

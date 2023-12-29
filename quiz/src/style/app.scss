@@ -1,0 +1,161 @@
+@use "./helpers/all" as *;
+
+// style home
+body {
+  display: grid;
+  color: $primary-color-black;
+  main.home {
+    section.container {
+      gap: 1rem;
+      header {
+        h1 {
+          margin: 5px;
+          width: 100%;
+          text-align: center;
+          font-size: 3rem;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .logo {
+          width: 100%;
+          text-align: center;
+          font-size: xx-large;
+        }
+      }
+    }
+  }
+  main.login {
+    div.container {
+      gap: 5rem;
+      padding: 2rem;
+      header {
+        button {
+          background-color: transparent;
+          border: 0;
+          font-size: x-large;
+          position: absolute;
+        }
+        h1 {
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+        }
+      }
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        input {
+          border: none;
+          outline: 0;
+          border-radius: 0.5rem;
+          padding: 0.3rem;
+          font-weight: bold;
+          min-width: 60%;
+          &:focus {
+            outline: 1px solid $primary-color-black;
+          }
+          &::placeholder {
+            color: $primary-color-black;
+            padding: 1rem;
+            padding-left: 0;
+            letter-spacing: 2px;
+          }
+          background-color: $secondary-color-blue;
+          color: $primary-color-black;
+        }
+      }
+    }
+  }
+  main.quiz {
+    .container {
+      padding: 2rem;
+      header {
+        position: relative;
+        .counter {
+          position: absolute;
+          background-color: $secondary-color-blue;
+          min-width: 50px;
+          text-align: center;
+          border-radius: 0.5rem;
+          justify-self: center;
+          right: 0;
+        }
+        h1 {
+          font-size: 1.3rem;
+          text-transform: capitalize;
+        }
+        progress {
+          height: 5vh;
+          margin-bottom: 1rem;
+          width: 100%;
+        }
+      }
+      section {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        header {
+          max-width: 100%;
+          p {
+            font-weight: bold;
+            max-height: 100px;
+            overflow: auto;
+            font-size: 1rem;
+            text-wrap: wrap;
+            position: relative;
+            margin: 0;
+            padding: 0;
+          }
+        }
+        button {
+          width: 100%;
+          border: 2px solid $primary-color-white;
+          border-radius: 0.5rem;
+          background-color: inherit;
+          padding: 1vw;
+          margin-top: 1rem;
+          font-weight: bold;
+          letter-spacing: 1px;
+          text-wrap: wrap;
+          &:where(.correct, .notCorrect) {
+            color: $primary-color-white;
+            border: none;
+          }
+          &.correct {
+            background-color: greenyellow;
+            &:hover {
+              background-color: greenyellow;
+            }
+          }
+          &.notCorrect {
+            background-color: red;
+            &:hover {
+              background-color: red;
+            }
+          }
+          &:hover {
+            background-color: $secondary-color-blue;
+          }
+        }
+      }
+    }
+  }
+  main.result {
+    background-color: inherit;
+    section.container {
+      gap: 2rem;
+      padding: 2rem;
+      p {
+        font-size: x-large;
+        font-weight: bold;
+        background-color: $secondary-color-blue;
+        padding: 1rem;
+      }
+    }
+  }
+}
