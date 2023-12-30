@@ -119,7 +119,7 @@ main {
   justify-content: center;
   transition: 1.5s;
 }
-@media (min-width: 991px) {
+@media (min-width: 550px) {
   .container {
     min-width: 500px;
   }

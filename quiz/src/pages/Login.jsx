@@ -32,7 +32,6 @@ function Login() {
     )
 
     function handleBackBtn(){
-        console.log(1);
         dispatch({type:'cleanErrors'})
         navigate(-1 , {replace:true})
     }

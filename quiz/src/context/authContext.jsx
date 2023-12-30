@@ -30,7 +30,6 @@ function reducer(state , action){
 }
 
 function AuthProvider({ children }) {
-
     const [stateAuth , dispatch] = useReducer(reducer,initialState)
     return <authContext.Provider value={{stateAuth , dispatch}}>
         {children}

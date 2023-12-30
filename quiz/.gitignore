@@ -22,3 +22,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+✓ 56 modules transformed.
+dist/index.html                                  0.45 kB │ gzip:  0.29 kB     
+dist/assets/fa-v4compatibility-qVwuqDda.woff2    4.80 kB
+dist/assets/fa-v4compatibility-P05473gG.ttf     10.83 kB
+dist/assets/fa-regular-400-9ieCXAg3.woff2       25.48 kB                      qu
+dist/assets/fa-regular-400-4tb0VodT.ttf         68.06 kB
+dist/assets/fa-brands-400-MSFMtnVL.woff2       116.67 kB
+dist/assets/fa-solid-900-0MPxAMbd.woff2        156.53 kB
+dist/assets/fa-brands-400-lurZrbbA.ttf         206.48 kB
+dist/assets/fa-solid-900-ggtMbd--.ttf          419.78 kB
+dist/assets/index-8zNSPYFF.css                  99.65 kB │ gzip: 24.27 kB
+dist/assets/index-HkrYrYqz.js                  239.47 kB │ gzip: 74.70 kB     
+✓ built in 1.70s
