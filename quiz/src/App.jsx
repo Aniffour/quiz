@@ -4,11 +4,7 @@ import { Suspense, lazy } from "react";
 import { AuthProvider  } from "./context/authContext";
 import { QuestionsProvider } from "./context/questionsContext";
 
-// import Home from "./pages/Home";
-// import Quiz from "./pages/Quiz";
-// import Login from "./pages/Login";
 import './style/app.css'
-// import Result from "./pages/Result";
 
 const Home  = lazy(()=>  import("./pages/Home"))
 const Login  = lazy(()=>  import("./pages/Login"))
@@ -30,6 +26,7 @@ function App() {
               <Route  path="login" element={<Login/>}/>
               <Route  path="quiz" element={<Quiz/>}/>
               <Route  path="result" element={<Result/>}/>
+              <Route  path="*" element={<main>Page Note Found ☹</main>}/>
             </Routes>
           </Suspense>
         </BrowserRouter>
